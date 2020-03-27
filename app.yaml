@@ -3,4 +3,6 @@ handlers:
 - url: /.*
   secure: always
   script: auto
-
+resources:
+  cpu: 2
+  memory_gb: 2.0
