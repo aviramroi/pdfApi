@@ -43,9 +43,14 @@ function createApp() {
     // Compress everything over 10 bytes
     threshold: 10,
   }));
+  
+  const router = createRouter();
+  
+  router.get('/',(req,res)=>{
+    res.send("Hello World!")
+  })
 
   // Initialize routes
-  const router = createRouter();
   app.use('/', router);
 
   app.use(errorLogger());
