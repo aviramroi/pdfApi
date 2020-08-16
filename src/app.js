@@ -46,9 +46,9 @@ function createApp() {
   
   const router = createRouter();
   
-  router.get('/',(req,res)=>{
-    res.send("Hello World!")
-  })
+  // router.get('/',(req,res)=>{
+  //   res.send("Hello World!")
+  // })
 
   // Initialize routes
   app.use('/', router);
