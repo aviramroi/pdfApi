@@ -33,6 +33,11 @@ function createRouter() {
       allowUnknownQuery: false,
     },
   };
+
+  router.get('/',(req,res)=>{
+    res.send("Hello World!")
+  })
+
   router.get('/api/render', validate(getRenderSchema), render.getRender);
 
   const postRenderSchema = {
