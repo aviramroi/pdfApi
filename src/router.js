@@ -34,7 +34,9 @@ function createRouter() {
     },
   };
 
-
+  router.get('/',(req,res)=>{
+    res.send('hello world~')
+  })
   router.get('/api/render', validate(getRenderSchema), render.getRender);
 
   const postRenderSchema = {
